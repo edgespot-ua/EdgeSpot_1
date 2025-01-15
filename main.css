@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&family=VT323&display=swap');
+
+body {
+    font-family: "Mulish", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none; /* Прибирає підкреслення */
+    color: inherit; /* Застосовує колір тексту від батьківського елемента */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.log_p{
+    width: 130px; /* Задає ширину */
+    height: auto; /* Висота встановлюється автоматично для збереження пропорцій */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+}
+
+.hero {
+    background-image: url('img/qqqq.jpg'); /* Шлях до фону */
+    background-size: cover; /* Зображення покриває весь блок */
+    background-position: center; /* Центрування зображення */
+    background-repeat: no-repeat; /* Без повторення зображення */
+    text-align: center;
+    padding: 120px;
+    background-color: #f4f4f4;
+}
+
+.hero h1 {
+    font-size: 2.6em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.3em;
+    color: #000000;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-tile {
+    text-align:left;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-tile img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-tile h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-tile p {
+    font-size: 1em;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
