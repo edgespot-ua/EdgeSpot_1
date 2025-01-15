@@ -41,7 +41,7 @@ header nav ul li a {
 }
 
 .hero {
-    background-image: url('img/qqqq.jpg'); /* Шлях до фону */
+    background-image: url('img_general/qqqq.jpg'); /* Шлях до фону */
     background-size: cover; /* Зображення покриває весь блок */
     background-position: center; /* Центрування зображення */
     background-repeat: no-repeat; /* Без повторення зображення */
