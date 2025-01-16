@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EdegeSpot</title>
     <link rel="stylesheet" href="main.css">
+<style>
+    @media (max-width: 768px) {
+            .brand-container {
+                gap: 60px; /* Зменшення відстані між логотипами */
+                padding: 10px;
+            }
 
+            .brand-container img {
+                height: 60px; /* Зменшення розміру логотипів */
+            }
+        }
+</style>
 </head>
 <body>
     <header>
@@ -29,6 +40,21 @@
         <p>Explore the latest trends in footwear</p>
     </section>
 
+
+    <div class="brand-container">
+       <a href="">
+        <img src="logo_brands/adidas_log.png" alt="Brand 1">
+       </a>
+
+        <a href="general_new_balance.html">
+            <img src="logo_brands/new_balance_loh.png" alt="Brand 2">
+        </a>
+       <a href="">
+        <img src="logo_brands/nike_log.png" alt="Brand 3">  
+       </a>
+    </div>
+
+   
     <section class="product-grid">
 
         <div class="product-tile">

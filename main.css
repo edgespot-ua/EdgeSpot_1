@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&family=VT323&display=swap');
 
+
+
+
 body {
   font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
 
 a {
     text-decoration: none; /* Прибирає підкреслення */
@@ -109,3 +116,34 @@ footer p {
     margin: 0;
     font-size: 0.9em;
 }
+
+
+.brand-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px; /* Відстань між картинками */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow-x: auto; /* Додає прокрутку, якщо контент перевищує ширину */
+    white-space: nowrap; /* Забезпечує горизонтальне розташування */
+}
+
+.brand-container img {
+    height: 90px; /* Висота логотипів */
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.brand-container img:hover {
+    transform: scale(1.1); /* Збільшення при наведенні */
+}
+
+
+
+
+
+
+
