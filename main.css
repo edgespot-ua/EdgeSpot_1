@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&family=VT323&display=swap');
 
 body {
-    font-family: "Mulish", serif;
+  font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,13 +16,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
+    padding: 10px;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
 }
 
 .log_p{
-    width: 130px; /* Задає ширину */
+    width: 95px; /* Задає ширину */
     height: auto; /* Висота встановлюється автоматично для збереження пропорцій */
 }
 
@@ -37,7 +37,7 @@ header nav ul {
 header nav ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 1.3em;
+    font-size: 1.06em;
 }
 
 .hero {
@@ -46,7 +46,7 @@ header nav ul li a {
     background-position: center; /* Центрування зображення */
     background-repeat: no-repeat; /* Без повторення зображення */
     text-align: center;
-    padding: 120px;
+    padding: 130px;
     background-color: #f4f4f4;
 }
 
