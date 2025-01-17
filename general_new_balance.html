@@ -6,11 +6,17 @@
     <title>Product Page</title>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <style>
-        body {
-           
+        /* Скидання стилів для запобігання переповнення */
+        * {
+            box-sizing: border-box; /* Включає padding і border у розрахунок ширини */
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Заборона горизонтального скролу */
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
         }
@@ -32,10 +38,12 @@
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Гарантія, що хедер займає всю ширину екрану */
         }
 
         .logo img {
             height: 50px;
+            max-width: 100%; /* Запобігання переповненню логотипу */
         }
 
         nav ul {
@@ -82,7 +90,7 @@
         }
 
         .product-tile img {
-            max-width: 100%;
+            max-width: 100%; /* Забезпечує адаптивність зображень */
             height: auto;
             border-radius: 10px;
         }
@@ -112,41 +120,32 @@
         }
 
         .logo-brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; /* Відстань між картинками */
-    padding: 20px;
-    border-radius: 10px;
-    overflow-x: auto; /* Додає прокрутку, якщо контент перевищує ширину */
-    white-space: nowrap; /* Забезпечує горизонтальне розташування */
-}
-.logo-brand img{
-    height: 200px; /* Висота логотипів */
-    object-fit: contain;
-    cursor: pointer;
-    pointer-events: none
-}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* Відстань між картинками */
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto; /* Додає прокрутку, якщо контент перевищує ширину */
+            white-space: nowrap; /* Забезпечує горизонтальне розташування */
+        }
+
+        .logo-brand img {
+            height: 200px; /* Висота логотипів */
+            object-fit: contain;
+            cursor: pointer;
+            pointer-events: none;
+        }
 
         /* Адаптивність для мобільних */
         @media (max-width: 768px) {
-
-            body {
-           margin: 0;
-           padding: 0;
-           overflow-x: hidden;
-           }
-
-
-
-
             header {
                 flex-wrap: wrap;
                 padding: 10px;
             }
 
             nav ul {
-                flex-direction:row;
+                flex-direction: row;
                 gap: 10px;
                 align-items: flex-start;
             }
@@ -162,11 +161,10 @@
             .product-tile p {
                 font-size: 14px;
             }
+
             .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-        }
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
         }
     </style>
 </head>
@@ -188,18 +186,17 @@
 </header>
 
 <main>
-  
-<div class="logo-brand">
-        <img src="logo_brands/new_balance_loh.png" alt="Brand 3">  
+    <div class="logo-brand">
+        <img src="logo_brands/new_balance_loh.png" alt="Brand 3">
     </div>
 
     <div class="product-grid">
-        <!-- Product Tiles -->
+        <!-- Продукти -->
         <div class="product-tile">
             <a href="newbalance.html">
                 <img src="brends_general_page_img/new_nalance_general_img/new_balance_1906r_green/m1906rwd_nb_02_i.webp" alt="Shoe 1">
-            <h3>New Balance 1906R</h3>
-            <p>7 250 ₴</p>
+                <h3>New Balance 1906R</h3>
+                <p>7 250 ₴</p>
             </a>
         </div>
         <div class="product-tile">
@@ -208,74 +205,44 @@
             <p>5 100 ₴</p>
         </div>
         <div class="product-tile">
-            <img src="brends_general_page_img/new_nalance_general_img/new_balance_fresh_foam_x_1080_v14/m1080m14_nb_02_i.webp" alt="Shoe 3">
-            <h3>New Balance Fresh Foam X 1080 v14</h3>
-            <p>7 240 ₴</p>
+            <img src="brends_general_page_img/new_nalance_general_img/new_balance_530/p_1.webp" alt="Shoe 2">
+            <h3>New Balance 530</h3>
+            <p>5 100 ₴</p>
         </div>
         <div class="product-tile">
-            <img src="brends_general_page_img/new_nalance_general_img/new_balance_1906r_grey/u1906rny_nb_02_i.webp" alt="Shoe 4">
-            <h3>New Balance 1906R</h3>
-            <p>5 940 ₴</p>
+            <img src="brends_general_page_img/new_nalance_general_img/new_balance_530/p_1.webp" alt="Shoe 2">
+            <h3>New Balance 530</h3>
+            <p>5 100 ₴</p>
         </div>
         <div class="product-tile">
-            <img src="img/shoe4.jpg" alt="Shoe 4">
-            <h3>Model Name 4</h3>
-            <p>5 940 ₴</p>
+            <img src="brends_general_page_img/new_nalance_general_img/new_balance_530/p_1.webp" alt="Shoe 2">
+            <h3>New Balance 530</h3>
+            <p>5 100 ₴</p>
         </div>
         <div class="product-tile">
-            <img src="img/shoe4.jpg" alt="Shoe 4">
-            <h3>Model Name 4</h3>
-            <p>6,500 ₴</p>
+            <img src="brends_general_page_img/new_nalance_general_img/new_balance_530/p_1.webp" alt="Shoe 2">
+            <h3>New Balance 530</h3>
+            <p>5 100 ₴</p>
         </div>
         <div class="product-tile">
-            <img src="img/shoe4.jpg" alt="Shoe 4">
-            <h3>Model Name 4</h3>
-            <p>6,500 ₴</p>
+            <img src="brends_general_page_img/new_nalance_general_img/new_balance_530/p_1.webp" alt="Shoe 2">
+            <h3>New Balance 530</h3>
+            <p>5 100 ₴</p>
         </div>
         <div class="product-tile">
-            <img src="img/shoe4.jpg" alt="Shoe 4">
-            <h3>Model Name 4</h3>
-            <p>6,500 ₴</p>
+            <img src="brends_general_page_img/new_nalance_general_img/new_balance_530/p_1.webp" alt="Shoe 2">
+            <h3>New Balance 530</h3>
+            <p>5 100 ₴</p>
         </div>
         <div class="product-tile">
-            <img src="img/shoe4.jpg" alt="Shoe 4">
-            <h3>Model Name 4</h3>
-            <p>6,500 ₴</p>
+            <img src="brends_general_page_img/new_nalance_general_img/new_balance_530/p_1.webp" alt="Shoe 2">
+            <h3>New Balance 530</h3>
+            <p>5 100 ₴</p>
         </div>
         <div class="product-tile">
-            <img src="img/shoe4.jpg" alt="Shoe 4">
-            <h3>Model Name 4</h3>
-            <p>6,500 ₴</p>
-        </div>
-        <div class="product-tile">
-            <img src="img/shoe4.jpg" alt="Shoe 4">
-            <h3>Model Name 4</h3>
-            <p>6,500 ₴</p>
-        </div>
-        <div class="product-tile">
-            <img src="img/shoe4.jpg" alt="Shoe 4">
-            <h3>Model Name 4</h3>
-            <p>6,500 ₴</p>
-        </div>
-        <div class="product-tile">
-            <img src="img/shoe4.jpg" alt="Shoe 4">
-            <h3>Model Name 4</h3>
-            <p>6,500 ₴</p>
-        </div>
-        <div class="product-tile">
-            <img src="img/shoe4.jpg" alt="Shoe 4">
-            <h3>Model Name 4</h3>
-            <p>6,500 ₴</p>
-        </div>
-        <div class="product-tile">
-            <img src="img/shoe4.jpg" alt="Shoe 4">
-            <h3>Model Name 4</h3>
-            <p>6,500 ₴</p>
-        </div>
-        <div class="product-tile">
-            <img src="img/shoe4.jpg" alt="Shoe 4">
-            <h3>Model Name 4</h3>
-            <p>6,500 ₴</p>
+            <img src="brends_general_page_img/new_nalance_general_img/new_balance_530/p_1.webp" alt="Shoe 2">
+            <h3>New Balance 530</h3>
+            <p>5 100 ₴</p>
         </div>
     </div>
 </main>
