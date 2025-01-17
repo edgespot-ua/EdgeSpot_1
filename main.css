@@ -68,11 +68,11 @@ header nav ul li a {
     color: #ffffff;
 }
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
+.product-grid {   
+    display: grid; /* Встановлює контейнер як grid, що дозволяє легко розміщувати елементи в сітці. */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Задає кількість колонок, що автоматично адаптуються до розміру контейнера. Мінімальний розмір колонки - 200px, максимальний - рівномірний поділ простору. */
+    gap: 20px; /* Встановлює відступи між елементами сітки (горизонтальні та вертикальні). */
+    padding: 20px; /* Додає внутрішні відступи навколо контейнера сітки. */
 }
 
 .product-tile {
