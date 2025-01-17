@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&family=VT323&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&family=VT323&display=swap');
 
 
 
@@ -48,7 +47,8 @@ header nav ul li a {
 }
 
 .hero {
-    background-image: url('img_general/qqqq.jpg'); /* Шлях до фону */
+    font-family: "Bebas Neue", serif;
+    background-image: url('img_general/fon_general_page.jpg'); /* Шлях до фону */
     background-size: cover; /* Зображення покриває весь блок */
     background-position: center; /* Центрування зображення */
     background-repeat: no-repeat; /* Без повторення зображення */
@@ -58,13 +58,14 @@ header nav ul li a {
 }
 
 .hero h1 {
-    font-size: 2.6em;
+    color: #ffffff;
+    font-size: 3.5em;
     margin: 0;
 }
 
 .hero p {
     font-size: 1.3em;
-    color: #000000;
+    color: #ffffff;
 }
 
 .product-grid {
