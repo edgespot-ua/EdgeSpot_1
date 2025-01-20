@@ -78,13 +78,32 @@
        
 
         footer {
-            width: 100%;
-            background-color: #f1f1f1;
-            color: #333;
-            padding: 20px;
-            text-align: center;
-            margin-top: auto;
-        }
+    display: flex; /* Увімкнення режиму Flexbox */
+    justify-content: space-between; /* Розташування елементів з відступом між ними */
+    align-items: center; /* Вирівнювання по вертикалі (якщо потрібно) */
+    padding: 60px; /* Відступи всередині footer */
+    background-color: #000000; /* Колір фону для наочності */
+    color: white;
+         }
+
+         footer p {
+    padding: 3px;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.obslugovuvanya-klientiv, .ssocialni-mereji {
+    flex: 1; /* Елементи отримують рівний простір (опціонально) */
+    margin: 0px 10px; /* Відступ між блоками */
+    
+  }
+
+  .icon_social a {
+    margin: 3px;
+    text-decoration: none;
+    font-size: 40px; /* Розмір іконки */
+    
+  }
 
         .product-container {
             display: flex;
@@ -253,6 +272,20 @@
                 font-size: 14px;
                 padding: 8px 10px;
             }
+            /*---------footer------------*/
+            footer {
+        display: block; /* Робимо блоки вертикальними */
+        text-align: left; /* Вирівнюємо текст по центру */
+        padding: 30px; /* Зменшуємо внутрішні відступи */
+            }
+
+    .obslugovuvanya-klientiv, .ssocialni-mereji {
+        margin: 20px 0; /* Збільшуємо відступ між блоками зверху і знизу */
+    }
+
+    .icon_social a {
+        font-size: 30px; /* Зменшуємо розмір іконок для мобільних */
+    }
         }
     </style>
 </head>
@@ -266,14 +299,14 @@
     </div>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a href="#">Menu</a></li> 
             <li><a href="#">About</a></li>
         </ul>
     </nav>
 </header>
-
-
+<br>
+<br>
+<br>
 
 
 <!-------------------------------->
@@ -294,16 +327,30 @@
 
     <!-- Details Section -->
     <div class="details">
-        <h1>New Balance 1906R</h1>
+        <h1>Nike Dunk Low Next Nature</h1>
         <div class="sizes">
+            <button>EU 36</button>
+            <button>EU 37</button>
+            <button>EU 37.5</button>
+            <button>EU 38</button>
+            <button>EU 38.5</button>
+            <button>EU 39.5</button>
+            <button>EU 40</button>
+            <button>EU 40.5</button>
             <button>EU 41</button>
+            <button>EU 41.5</button>
             <button>EU 42</button>
+            <button>EU 42.5</button>
             <button>EU 43</button>
             <button>EU 44</button>
+            <button>EU 44.5</button>
+            <button>EU 45</button>
+            <button>EU 45.5</button>
+            <button>EU 46.5</button>
         </div>
 
         <div class="price_product">
-            7 000 ₴
+            4 800 ₴
         </div>
 
         <a href="https://web.telegram.org/a/#6696686466" target="_blank">
@@ -316,9 +363,28 @@
 </div>
 </main>
 
+
+
+<br>
+<br>
+<br>
+<br>
+
 <footer>
-    <p>&copy; 2025 Магазин Кросівок. Всі права захищені.</p>
-    <p><a href="mailto:info@shop.com">Зв'язатися з нами</a></p>
+    <div class="obslugovuvanya-klientiv">
+        <p><b><strong>Обслуговування клієнтів</strong></b></p>
+        <a href="https://web.telegram.org/a/#6696686466" target="_blank"><p>Зв'яжіться з нами</p></a>
+        <p>Як замовити</p>
+    </div>
+  
+    <div class="ssocialni-mereji">
+      <p><b><strong>Осціальні мережі</strong></b></p>
+      <div class="icon_social">
+          <a href="https://t.me/edgespot_telegram"><i class='bx bxl-telegram'></i></a>
+          <a href=""><i class='bx bxl-instagram'></i></a>
+          <a href=""><i class='bx bxl-tiktok' ></i></a>
+      </div>
+    </div>
 </footer>
 
 <script>
