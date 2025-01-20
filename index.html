@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EdegeSpot</title>
     <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <style>
     @media (max-width: 768px) {
               .hero h1 {
                 color: #ffffff;
-                font-size: 2.3em;
+                font-size: 1.7em;
                 margin: 0;
               }
 
@@ -26,6 +27,21 @@
              font-size: 0.83em;
              color: #ffffff;
             }
+
+
+            footer {
+        display: block; /* Робимо блоки вертикальними */
+        text-align: left; /* Вирівнюємо текст по центру */
+        padding: 30px; /* Зменшуємо внутрішні відступи */
+            }
+
+    .obslugovuvanya-klientiv, .ssocialni-mereji {
+        margin: 20px 0; /* Збільшуємо відступ між блоками зверху і знизу */
+    }
+
+    .icon_social a {
+        font-size: 30px; /* Зменшуємо розмір іконок для мобільних */
+    }
         }
 </style>
 </head>
@@ -77,7 +93,7 @@
         </div>
         <div class="product-tile">
            <a href="nikedunk.html">
-            <img src="brends_general_page_img/nike_general_img/nike_dunk_low_next_nature_red/W_NIKE_DUNK_LOW_NEXT_NATURE.jpg" alt="Shoe 2">
+            <img src="brends_general_page_img/nike_general_img/nike_dunk_low_next_nature_red/photo_1.png" alt="Shoe 2">
             <h3>Nike Dunk Low Next Nature</h3>
             <p>3 500 ₴</p>
            </a>
@@ -97,7 +113,21 @@
 </main>
 
 <footer>
-    <p>&copy; 2025 EdegeSpot. All rights reserved.</p>
+  <div class="obslugovuvanya-klientiv">
+      <p><b><strong>Обслуговування клієнтів</strong></b></p>
+      <a href="https://web.telegram.org/a/#6696686466" target="_blank"><p>Зв'яжіться з нами</p></a>
+      <p>Як замовити</p>
+  </div>
+
+  <div class="ssocialni-mereji">
+    <p><b><strong>Осціальні мережі</strong></b></p>
+    <div class="icon_social">
+        <a href="https://t.me/edgespot_telegram" target="_blank"><i class='bx bxl-telegram'></i></a>
+        <a href=""><i class='bx bxl-instagram'></i></a>
+        <a href=""><i class='bx bxl-tiktok' ></i></a>
+    </div>
+  </div>
+
 </footer>
 </body>
 </html>

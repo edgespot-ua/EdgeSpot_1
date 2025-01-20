@@ -19,6 +19,9 @@ a {
 }
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,18 +114,33 @@ nav ul li a:hover {
 }
 
 footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #333;
+    display: flex; /* Увімкнення режиму Flexbox */
+    justify-content: space-between; /* Розташування елементів з відступом між ними */
+    align-items: center; /* Вирівнювання по вертикалі (якщо потрібно) */
+    padding: 60px; /* Відступи всередині footer */
+    background-color: #000000; /* Колір фону для наочності */
     color: white;
-    margin-top: 20px;
+   
 }
 
 footer p {
+    padding: 3px;
     margin: 0;
     font-size: 0.9em;
 }
 
+.obslugovuvanya-klientiv, .ssocialni-mereji {
+    flex: 1; /* Елементи отримують рівний простір (опціонально) */
+    margin: 0px 10px; /* Відступ між блоками */
+    
+  }
+
+  .icon_social a {
+    margin: 3px;
+    text-decoration: none;
+    font-size: 40px; /* Розмір іконки */
+    
+  }
 
 .brand-container {
     display: flex;
