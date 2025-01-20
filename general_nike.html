@@ -112,12 +112,33 @@
         }
 
         footer {
-            width: 100%;
-            background-color: #f1f1f1;
-            color: #333;
-            padding: 20px;
-            text-align: center;
-        }
+    display: flex; /* Увімкнення режиму Flexbox */
+    justify-content: space-between; /* Розташування елементів з відступом між ними */
+    align-items: center; /* Вирівнювання по вертикалі (якщо потрібно) */
+    padding: 60px; /* Відступи всередині footer */
+    background-color: #000000; /* Колір фону для наочності */
+    color: white;
+   
+}
+
+footer p {
+    padding: 3px;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.obslugovuvanya-klientiv, .ssocialni-mereji {
+    flex: 1; /* Елементи отримують рівний простір (опціонально) */
+    margin: 0px 10px; /* Відступ між блоками */
+    
+  }
+
+  .icon_social a {
+    margin: 3px;
+    text-decoration: none;
+    font-size: 40px; /* Розмір іконки */
+    
+  }
 
         .logo-brand {
             display: flex;
@@ -165,6 +186,20 @@
             .product-grid {
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             }
+
+            footer {
+        display: block; /* Робимо блоки вертикальними */
+        text-align: left; /* Вирівнюємо текст по центру */
+        padding: 30px; /* Зменшуємо внутрішні відступи */
+            }
+
+    .obslugovuvanya-klientiv, .ssocialni-mereji {
+        margin: 20px 0; /* Збільшуємо відступ між блоками зверху і знизу */
+    }
+
+    .icon_social a {
+        font-size: 30px; /* Зменшуємо розмір іконок для мобільних */
+    }
         }
     </style>
 </head>
@@ -193,52 +228,87 @@
     <div class="product-grid">
         <!-- Продукти -->
         <div class="product-tile">
-            <a href="all_pages_new_balance/nebalance1906r_green.html">
-                <img src="brends_generalpage_img/new_nalance_general_img/new_balance_1906r_green/m1906rwd_nb_02_i.webp" alt="Shoe 1">
+            <a href="all_pages_new_balance/newbalance906r_green.html">
+                <img src="brends_general_page_img/new_nlance_general_img/new_balance_1906r_green/m1906rwd_nb_02_i.webp" alt="Shoe 1">
                 <h3>New Balance 1906R</h3>
                 <p>7 250 ₴</p>
             </a>
         </div>
         <div class="product-tile">
-           <a href="all_pages_new_balance/new_balnc_530_classic.html">
-            <img src="brends_general_pge_img/new_nalance_general_img/new_balance_530/p_1.webp" alt="Shoe 2">
+           <a href="all_pages_new_balance/new_balace_530_classic.html">
+            <img src="brends_general_page_img/new_nlance_general_img/new_balance_530/p_1.webp" alt="Shoe 2">
             <h3>New Balance 530</h3>
             <p>5 100 ₴</p>
            </a>
         </div>
         <div class="product-tile">
-            <img src="brends_genral_page_ig/new_nalance_general_img/new_balance_fresh_foam_x_1080_v14/m1080m14_nb_02_i.webp" alt="Shoe 2">
+            <img src="brends_general_page_img/new_nalane_general_img/new_balance_fresh_foam_x_1080_v14/m1080m14_nb_02_i.webp" alt="Shoe 2">
             <h3>New Balance Fresh Foam X 1080 v14 Schuhe</h3>
             <p>7 400 ₴</p>
         </div>
         <div class="product-tile">
-            <img src="brends_generalpage_img/new_nalance_general_img/new_balance_740_white/u740wm2_nb_02_i.webp" alt="Shoe 2">
+            <img src="brends_general_page_img/new_nalace_general_img/new_balance_740_white/u740wm2_nb_02_i.webp" alt="Shoe 2">
             <h3>New Balance 1906R</h3>
             <p>6 840 ₴</p>
         </div>
         <div class="product-tile">
-            <img src="brends_geeral_page_img/new_nalance_general_img/new_balance_1906r_grey/u1906rny_nb_02_i.webp" alt="Shoe 2">
+            <img src="brends_general_page_img/new_nalancegeneral_img/new_balance_1906r_grey/u1906rny_nb_02_i.webp" alt="Shoe 2">
             <h3>New Balance 1906R</h3>
             <p>6 840 ₴</p>
         </div>
         <div class="product-tile">
-            <img src="brends_gneral_page_img/new_nalance_general_img/new_balance_550_green_white/bb550vtg_nb_02_i.webp" alt="Shoe 2">
+            <img src="brends_general_page_img/new_nalane_general_img/new_balance_550_green_white/bb550vtg_nb_02_i.webp" alt="Shoe 2">
             <h3>New Balance 530</h3>
             <p>5 350 ₴</p>
         </div>
         <div class="product-tile">
-            <img src="brends_generl_page_img/new_nalance_general_img/new_balance_530/p_1.webp" alt="Shoe 2">
-            <h3>New Balance 550</h3>
-            <p>5 500 ₴</p>
+            <img src="brends_general_page_img/new_nalace_general_img/new_balance_WRPD Runner/uwrpdhsb_nb_02_i.webp" alt="Shoe 2">
+            <h3>WRPD Runner</h3>
+            <p>6 242 ₴</p>
         </div>
-        
-        
+        <div class="product-tile">
+            <img src="brends_general_page_img/new_nalnce_general_img/new_balance_2002R_green/u2002rca_nb_02_i.webp" alt="Shoe 2">
+            <h3>New Balance 2002R</h3>
+            <p>5 470 ₴</p>
+        </div>
+        <div class="product-tile">
+            <img src="brends_general_page_img/new_nalnce_general_img/new_balance_610_v1/ml610te_nb_02_i.webp" alt="Shoe 2">
+            <h3>New Balance 610v1</h3>
+            <p>5 100 ₴</p>
+        </div>
+        <div class="product-tile">
+            <img src="brends_general_page_img/new_naance_general_img/new_balance_580_white/mt580esb_nb_02_i.webp" alt="Shoe 2">
+            <h3>New Balance 580</h3>
+            <p>5 380 ₴</p>
+        </div>
+        <div class="product-tile">
+            <img src="brends_general_page_img/new_naance_general_img/new_balance_993_made_usa_core/wr993gl_nb_02_i.webp" alt="Shoe 2">
+            <h3>New Balance Made in USA 993 Core</h3>
+            <p>8 430 ₴</p>
+        </div>
     </div>
 </main>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <footer>
-    <p>&copy; 2025 Sneaker Store. All rights reserved.</p>
-    <p><a href="mailto:info@shop.com">Contact Us</a></p>
+    <div class="obslugovuvanya-klientiv">
+        <p><b><strong>Обслуговування клієнтів</strong></b></p>
+        <p>Зв'яжіться з нами</p>
+        <p>Як замовити</p>
+    </div>
+  
+    <div class="ssocialni-mereji">
+      <p><b><strong>Осціальні мережі</strong></b></p>
+      <div class="icon_social">
+          <a href=""><i class='bx bxl-telegram'></i></a>
+          <a href=""><i class='bx bxl-instagram'></i></a>
+          <a href=""><i class='bx bxl-tiktok' ></i></a>
+      </div>
+    </div>
 </footer>
 
 </body>
