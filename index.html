@@ -3,75 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="icon" href="img_d/icon_web.jpg" sizes="32x32" type="image/png">
     <title>EdgeSpot - головна</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&family=VT323&display=swap');
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900;1,900&family=Teko:wght@300..700&family=VT323&display=swap');
 
-body {
- 
- font-family: Arial, sans-serif;
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-a {
-    text-decoration: none; /* Прибирає підкреслення */
-    color: inherit; /* Застосовує колір тексту від батьківського елемента */
-}
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-}
-
-.log_p{
-    width: 95px; /* Задає ширину */
-    height: auto; /* Висота встановлюється автоматично для збереження пропорцій */
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 1.06em;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #979797;
-}
-
-.hero {
-    font-family: "Bebas Neue", serif;
-    background-image: url('img_general/fon_general_page.jpg'); /* Шлях до фону */
-    background-size: cover; /* Зображення покриває весь блок */
-    background-position: center; /* Центрування зображення */
-    background-repeat: no-repeat; /* Без повторення зображення */
-    text-align: center;
-    padding: 130px;
-    background-color: #f4f4f4;
-}
-
-
-.img_discond{
+        .img_discond{
     width: 100%;
     height: 100%;
     object-fit: cover; /* Заповнює контейнер без спотворень */
@@ -79,117 +29,143 @@ nav ul li a:hover {
    
 }
 
-.hero h1 {
-    color: #ffffff;
-    font-size: 5em;
-    margin: 0;
-}
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+        }
 
-.hero p {
-    font-size: 1.7em;
-    color: #ffffff;
-}
+        .log_p {
+            width: 95px;
+            height: auto;
+        }
 
-.product-grid {   
-    display: grid; /* Встановлює контейнер як grid, що дозволяє легко розміщувати елементи в сітці. */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Задає кількість колонок, що автоматично адаптуються до розміру контейнера. Мінімальний розмір колонки - 200px, максимальний - рівномірний поділ простору. */
-    gap: 20px; /* Встановлює відступи між елементами сітки (горизонтальні та вертикальні). */
-    padding: 20px; /* Додає внутрішні відступи навколо контейнера сітки. */
-}
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
 
-.product-tile {
-    text-align:left;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: white;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+        header nav ul li a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 1.06em;
+            transition: 0.3s;
+        }
 
-.product-tile:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
+        nav ul li a:hover {
+            color: #979797;
+        }
 
-.product-tile img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
 
-.product-tile h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
+        .product-tile {
+            text-align: left;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-.product-tile p {
-    font-size: 1em;
-    color: #333;
-}
+        .product-tile:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
 
-footer {
-    display: flex; /* Увімкнення режиму Flexbox */
-    justify-content: space-between; /* Розташування елементів з відступом між ними */
-    align-items: center; /* Вирівнювання по вертикалі (якщо потрібно) */
-    padding: 60px; /* Відступи всередині footer */
-    background-color: #000000; /* Колір фону для наочності */
-    color: white;
-   
-}
+        .product-tile img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
 
-footer p {
-    padding: 3px;
-    margin: 0;
-    font-size: 0.9em;
-}
+        .product-tile h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
 
-.obslugovuvanya-klientiv, .ssocialni-mereji {
-    flex: 1; /* Елементи отримують рівний простір (опціонально) */
-    margin: 0px 10px; /* Відступ між блоками */
-    
-  }
+        .product-tile p {
+            font-size: 1em;
+            color: #333;
+        }
 
-  .icon_social a {
-    margin: 3px;
-    text-decoration: none;
-    font-size: 40px; /* Розмір іконки */
-    
-  }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px;
+            background-color: #000000;
+            color: white;
+        }
 
-.brand-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 150px; /* Відстань між картинками */
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 10px;
-    overflow-x: auto; /* Додає прокрутку, якщо контент перевищує ширину */
-    white-space: nowrap; /* Забезпечує горизонтальне розташування */
-}
+        footer p {
+            padding: 3px;
+            margin: 0;
+            font-size: 0.9em;
+        }
 
-.brand-container img {
-    height: 90px; /* Висота логотипів */
-    object-fit: contain;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
+        .obslugovuvanya-klientiv, .ssocialni-mereji {
+            flex: 1;
+            margin: 0px 10px;
+        }
 
-.brand-container img:hover {
-    transform: scale(1.1); /* Збільшення при наведенні */
-}
-/*=======================================================================*/
+        .icon_social a {
+            margin: 3px;
+            text-decoration: none;
+            font-size: 40px;
+        }
 
-.slideshow-container {
+        .brand-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 150px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .brand-container img {
+            height: 90px;
+            object-fit: contain;
+            cursor: pointer;
+            transition: transform 0.18s ease;
+        }
+
+        .brand-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .slideshow-container {
             position: relative;
             width: 100%;
             max-height: 700px;
             overflow: hidden;
         }
 
+        .slide-wrapper {
+            display: flex;
+            transition: transform 0.6s ease-in-out;
+        }
+
         .slide {
-            display: none;
-            width: 100%;
+            min-width: 100%;
+            transition: opacity 1.5s ease;
         }
 
         .slide img {
@@ -198,176 +174,137 @@ footer p {
             display: block;
         }
 
-        .fade {
-            animation: fadeEffect 0.9s ease-in-out;
-        }
-
-        @keyframes fadeEffect {
-            from { opacity: 0.4; }
-            to { opacity: 1; }
-        }
-
-
-
-/*=======================================================================*/
-
-    @media (max-width: 768px) {
-
-
-
-        /*================================================*/
-              .hero h1 {
-                color: #ffffff;
-                font-size: 1.7em;
-                margin: 0;
-              }
-
-              .hero p {
-             font-size: 0.83em;
-             color: #ffffff;
-            }
-
+        @media (max-width: 768px) {
             .brand-container {
-                gap: 60px; /* Зменшення відстані між логотипами */
+                gap: 60px;
                 padding: 10px;
             }
 
             .brand-container img {
-                height: 60px; /* Зменшення розміру логотипів */
+                height: 60px;
             }
 
-             footer {
-                 display: block; /* Робимо блоки вертикальними */
-                 text-align: left; /* Вирівнюємо текст по центру */
-                 padding: 30px; /* Зменшуємо внутрішні відступи */
-                }
+            footer {
+                display: block;
+                text-align: left;
+                padding: 30px;
+            }
 
-    .obslugovuvanya-klientiv, .ssocialni-mereji {
-        margin: 20px 0; /* Збільшуємо відступ між блоками зверху і знизу */
-    }
+            .obslugovuvanya-klientiv, .ssocialni-mereji {
+                margin: 20px 0;
+            }
 
-    .icon_social a {
-        font-size: 30px; /* Зменшуємо розмір іконок для мобільних */
-    }
+            .icon_social a {
+                font-size: 30px;
+            }
         }
-</style>
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
-                <img class="log_p"  src="img_new_balance_1906r/Log_new.png" alt="logo">
+            <img class="log_p" src="img_new_balance_1906r/Log_new.png" alt="logo">
         </div>
-
         <nav>
             <ul>
                 <!--<li><a href="#">About</a></li>-->
-                
             </ul>
         </nav>
     </header>
 
     <div class="slideshow-container">
-        <div class="slide fade">
-            <img src="img_d/IMG_9659.JPEG" alt="Banner 1">
-        </div>
-        <div class="slide fade">
-            <img src="img_d/img_dic_hener.JPEG" alt="Banner 2">
+        <div class="slide-wrapper">
+            <div class="slide active">
+                <img src="img_d/IMG_9659.JPEG" alt="Banner 1">
+            </div>
+            <div class="slide">
+                <img src="img_d/img_dic_hener.JPEG" alt="Banner 2">
+            </div>
+            
         </div>
     </div>
 
-
-
-<main>
-    <!--<section class="hero">
-        <h1>Find Your Perfect Pair</h1>
-        <p>Explore the latest trends in footwear</p>
-    </section>-->
-
-
-    <div class="brand-container">
-       <a href="general_adidas.html">
-        <img src="logo_brands/adidas_log.png" alt="Brand 1">
-       </a>
-
-        <a href="general_new_balance.html">
-            <img src="logo_brands/new_balance_loh.png" alt="Brand 2">
-        </a>
-       <a href="general_nike.html">
-        <img src="logo_brands/nike_log.png" alt="Brand 3">  
-       </a>
-    </div>
-
-   
-    <section class="product-grid">
-
-        <div class="product-tile">
-            <a href="all_pages_new_balance/newbalance1906r_M1906RWD.html">
-                <img src="brends_general_page_img/new_nalance_general_img/new_balance_1906r_green/m1906rwd_nb_02_i.webp" alt="Shoe 1">
-            <h3>New Balance 1906R</h3>
-            <p>6 890 ₴</p>
+    <main>
+        <div class="brand-container">
+            <a href="general_adidas.html">
+                <img src="logo_brands/adidas_log.png" alt="Brand 1">
+            </a>
+            <a href="general_new_balance.html">
+                <img src="logo_brands/new_balance_loh.png" alt="Brand 2">
+            </a>
+            <a href="general_nike.html">
+                <img src="logo_brands/nike_log.png" alt="Brand 3">
             </a>
         </div>
-        <div class="product-tile">
-           <a href="all_pages_nike/nike_dunk_low_next_nature_red.html">
-            <img src="brends_general_page_img/nike_general_img/nike_dunk_low_next_nature_red/photo_1.png" alt="Shoe 2">
-            <h3>Nike Dunk Low Next Nature</h3>
-            <p>3 800 ₴</p>
-           </a>
+
+        <section class="product-grid">
+            <div class="product-tile">
+                <a href="all_pages_new_balance/newbalance1906r_M1906RWD.html">
+                    <img src="brends_general_page_img/new_nalance_general_img/new_balance_1906r_green/m1906rwd_nb_02_i.webp" alt="Shoe 1">
+                    <h3>New Balance 1906R</h3>
+                    <p>6 890 ₴</p>
+                </a>
+            </div>
+            <div class="product-tile">
+                <a href="all_pages_nike/nike_dunk_low_next_nature_red.html">
+                    <img src="brends_general_page_img/nike_general_img/nike_dunk_low_next_nature_red/photo_1.png" alt="Shoe 2">
+                    <h3>Nike Dunk Low Next Nature</h3>
+                    <p>3 800 ₴</p>
+                </a>
+            </div>
+            <div class="product-tile">
+                <a href="all_pages_adidas/adidas_handball_cardboard.html">
+                    <img src="brends_general_page_img/adidas_general_img/adidas_handball_cardboard_cordura/fot_1.jpg" alt="Shoe 3">
+                    <h3>Adidas Handbal snush</h3>
+                    <p>5 390 ₴</p>
+                </a>
+            </div>
+            <div class="product-tile">
+                <a href="all_pages_new_balance/new_balance_740_ U740WM2.html">
+                    <img src="brends_general_page_img/new_nalance_general_img/new_balance_740_white/u740wm2_nb_02_i.webp" alt="Shoe 3">
+                    <h3>New Balance 740</h3>
+                    <p>4 900 ₴</p>
+                </a>
+            </div>
+        </section>
+
+        <img class="img_discond" src="img_d/img_dic_hener.JPEG" alt="fon_1">
+    </main>
+
+    <footer>
+        <div class="obslugovuvanya-klientiv">
+            <p><b><strong>Обслуговування клієнтів</strong></b></p>
+            <a href="https://web.telegram.org/a/#6696686466" target="_blank"><p>Зв'яжіться з нами</p></a>
+            <p>Як замовити</p>
         </div>
-        <div class="product-tile">
-            <a href="all_pages_adidas/adidas_handball_cardboard.html">
-                <img src="brends_general_page_img/adidas_general_img/adidas_handball_cardboard_cordura/fot_1.jpg" alt="Shoe 3">
-            <h3>Adidas Handbal snush</h3>
-            <p>5 390 ₴</p>
-            </a>
+
+        <div class="ssocialni-mereji">
+            <p><b><strong>Соціальні мережі</strong></b></p>
+            <div class="icon_social">
+                <a href="https://t.me/edgespot_telegram" target="_blank"><i class='bx bxl-telegram'></i></a>
+                <a href="https://www.instagram.com/edgespot_ua?igsh=MTAxbnZnN2xuamV1ZA==" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.tiktok.com/@edgespot_ua" target="_blank"><i class='bx bxl-tiktok'></i></a>
+            </div>
         </div>
-        <div class="product-tile">
-            <a href="all_pages_new_balance/new_balance_740_ U740WM2.html">
-                <img src="brends_general_page_img/new_nalance_general_img/new_balance_740_white/u740wm2_nb_02_i.webp" alt="Shoe 3">
-            <h3>New Balance 740</h3>
-            <p>4 900 ₴</p>
-            </a>
-        </div>
-        <!-- Add more tiles as needed -->
-    </section>
-    
-    
-       <img class="img_discond" src="img_d/img_dic_hener.JPEG" alt="fon_1">
+    </footer>
 
-</main>
+    <script>
+        let slideIndex = 0;
 
+        function showSlides() {
+            const slides = document.querySelectorAll('.slide');
+            const slideWrapper = document.querySelector('.slide-wrapper');
 
-<footer>
-  <div class="obslugovuvanya-klientiv">
-      <p><b><strong>Обслуговування клієнтів</strong></b></p>
-      <a href="https://web.telegram.org/a/#6696686466" target="_blank"><p>Зв'яжіться з нами</p></a>
-      <p>Як замовити</p>
-  </div>
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
 
-  <div class="ssocialni-mereji">
-    <p><b><strong>Соціальні мережі</strong></b></p>
-    <div class="icon_social">
-        <a href="https://t.me/edgespot_telegram" target="_blank"><i class='bx bxl-telegram'></i></a>
-        <a href="https://www.instagram.com/edgespot_ua?igsh=MTAxbnZnN2xuamV1ZA==" target="_blank"><i class='bx bxl-instagram'></i></a>
-        <a href="https://www.tiktok.com/@edgespot?_t=ZM-8tFa85DYK6Y&_r=1" target="_blank"><i class='bx bxl-tiktok' ></i></a>
-    </div>
-  </div>
+            slideWrapper.style.transform = `translateX(-${(slideIndex - 1) * 100}%)`;
 
-</footer>
-
-<script>
-    let slideIndex = 0;
-    function showSlides() {
-        let slides = document.querySelectorAll(".slide");
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+            setTimeout(showSlides, 7000);  // Time between slide transitions
         }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1; }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 7000);
-    }
-    showSlides();
-</script>
+
+        showSlides();
+    </script>
 </body>
 </html>
+
