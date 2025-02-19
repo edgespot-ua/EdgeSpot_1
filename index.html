@@ -72,7 +72,7 @@
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
+            gap: 33px;
             padding: 20px;
         }
 
@@ -80,7 +80,7 @@
             text-align: left;
             padding: 15px;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 15px;
             background-color: white;
             transition: transform 0.3s, box-shadow 0.3s;
         }
@@ -145,7 +145,7 @@
         }
 
         .brand-container img {
-            height: 90px;
+            height: 105px;
             object-fit: contain;
             cursor: pointer;
             transition: transform 0.18s ease;
@@ -177,6 +177,29 @@
             height: auto;
             display: block;
         }
+
+        /* Основна оболонка */
+.general-grid {
+ 
+    text-align: center;
+    width: 90%;   /*90*/
+    max-width: 1200px; /*1200*/
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.general-grid h2{
+    font-size: 30px;
+}
+.thin-line {
+    
+    border: none;
+    height: 1px;
+    background-color: lightgray;
+    margin: 20px 0;
+}
+
 
         @media (max-width: 768px) {
             .brand-container {
@@ -219,6 +242,8 @@
             </ul>
         </nav>
     </header>
+    
+
 
     <div class="slideshow-container">
         <div class="slide-wrapper">
@@ -234,6 +259,9 @@
         </div>
     </div>
 
+    <br>
+    <br>
+
     <main>
         <div class="brand-container">
             <a href="general_adidas.html">
@@ -247,40 +275,61 @@
             </a>
         </div>
 
-        <section class="product-grid">
-            <div class="product-tile">
-                <a href="all_pages_new_balance/newbalance1906r_M1906RWD.html">
-                    <img src="brends_general_page_img/new_nalance_general_img/new_balance_1906r_green/m1906rwd_nb_02_i.webp" alt="Shoe 1">
-                    <h3>New Balance 1906R</h3>
-                    <p>6 890 ₴</p>
-                </a>
-            </div>
-            <div class="product-tile">
-                <a href="all_pages_nike/nike_dunk_low_next_nature_red.html">
-                    <img src="brends_general_page_img/nike_general_img/nike_dunk_low_next_nature_red/photo_1.png" alt="Shoe 2">
-                    <h3>Nike Dunk Low Next Nature</h3>
-                    <p>3 800 ₴</p>
-                </a>
-            </div>
-            <div class="product-tile">
-                <a href="all_pages_adidas/adidas_handball_cardboard.html">
-                    <img src="brends_general_page_img/adidas_general_img/adidas_handball_cardboard_cordura/fot_1.jpg" alt="Shoe 3">
-                    <h3>Adidas Handbal snush</h3>
-                    <p>5 390 ₴</p>
-                </a>
-            </div>
-            <div class="product-tile">
-                <a href="all_pages_new_balance/new_balance_740_ U740WM2.html">
-                    <img src="brends_general_page_img/new_nalance_general_img/new_balance_740_white/u740wm2_nb_02_i.webp" alt="Shoe 3">
-                    <h3>New Balance 740</h3>
-                    <p>5 190 ₴</p>
-                </a>
-            </div>
-        </section>
+        <br>
+        <br>
 
-        <!--        <img class="img_discond" src="img_d/img_dic_hener.JPEG" alt="fon_1"> -->
+        <hr class="thin-line">
+
+
+        <section class="general-grid">
+            <h2 class="section-title">ТОПОВІ ПОЗИЦІЇ</h2>
+            <section class="product-grid">
+                <div class="product-tile">
+                    <a href="all_pages_new_balance/newbalance1906r_M1906RWD.html">
+                        <img src="brends_general_page_img/new_nalance_general_img/new_balance_1906r_green/m1906rwd_nb_02_i.webp" alt="Shoe 1">
+                        <h3>New Balance 1906R</h3>
+                        <p>6 890 ₴</p>
+                    </a>
+                </div>
+                <div class="product-tile">
+                    <a href="all_pages_nike/nike_dunk_low_next_nature_red.html">
+                        <img src="brends_general_page_img/nike_general_img/nike_dunk_low_next_nature_red/photo_1.png" alt="Shoe 2">
+                        <h3>Nike Dunk Low Next Nature</h3>
+                        <p>3 800 ₴</p>
+                    </a>
+                </div>
+                <div class="product-tile">
+                    <a href="all_pages_adidas/adidas_handball_cardboard.html">
+                        <img src="brends_general_page_img/adidas_general_img/adidas_handball_cardboard_cordura/fot_1.jpg" alt="Shoe 3">
+                        <h3>Adidas Handbal snush</h3>
+                        <p>5 390 ₴</p>
+                    </a>
+                </div>
+                <div class="product-tile">
+                    <a href="all_pages_new_balance/new_balance_740_ U740WM2.html">
+                        <img src="brends_general_page_img/new_nalance_general_img/new_balance_740_white/u740wm2_nb_02_i.webp" alt="Shoe 3">
+                        <h3>New Balance 740</h3>
+                        <p>5 190 ₴</p>
+                    </a>
+                </div>
+            </section>
+        </section>
+        
+
+        <br>
+        <br>
+        <br>
+
+               <a href="SORTUVALNI_STORINKU/MODELI_STORINOK/M_New_balance/327.html">
+                <img class="img_discond" src="img_d/327_img_baner.jpg" alt="fon_1"> 
+               </a>
+
     </main>
 
+
+
+
+    
     <footer>
         <div class="obslugovuvanya-klientiv">
             <p><b><strong>Обслуговування клієнтів</strong></b></p>
