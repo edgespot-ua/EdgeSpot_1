@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img_d/icon_web.jpg" sizes="32x32" type="image/png">
+    <title>EdgeSpot - new balance - 237</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /*======================================================*/
+/* Скидання стилів для запобігання переповнення */
+* {
+            box-sizing: border-box; /* Включає padding і border у розрахунок ширини */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Заборона горизонтального скролу */
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Хедер */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #ffffff;
+            color: #000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Гарантія, що хедер займає всю ширину екрану */
+        }
+
+        .logo img {
+            height: 50px;
+            max-width: 100%; /* Запобігання переповненню логотипу */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            font-size: 17px;
+        }
+
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #858584;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+
+        /*======================================================*/
+       
+
+        footer {
+    display: flex; /* Увімкнення режиму Flexbox */
+    justify-content: space-between; /* Розташування елементів з відступом між ними */
+    align-items: center; /* Вирівнювання по вертикалі (якщо потрібно) */
+    padding: 60px; /* Відступи всередині footer */
+    background-color: #000000; /* Колір фону для наочності */
+    color: white;
+         }
+
+         footer p {
+    padding: 3px;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.obslugovuvanya-klientiv, .ssocialni-mereji {
+    flex: 1; /* Елементи отримують рівний простір (опціонально) */
+    margin: 0px 10px; /* Відступ між блоками */
+    
+  }
+
+  .icon_social a {
+    margin: 3px;
+    text-decoration: none;
+    font-size: 40px; /* Розмір іконки */
+    
+  }
+
+        .product-container {
+            display: flex;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 1100px;
+            height: 500px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .gallery img {
+            width: 80px;
+            height: 75px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid transparent;
+            border-radius: 5px;
+        }
+
+        .gallery img:hover, .gallery img.active {
+            border-color: #000000;
+        }
+
+        .main-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .main-image img {
+            max-width: 100%;
+            max-height: 600px;
+            border-radius: 10px;
+        }
+
+        .details {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .details h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .sizes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .sizes button {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            background: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .sizes button:hover, .sizes button.active {
+            background: #000000;
+            color: #fff;
+            border-color: #000000;
+        }
+
+        .price_product {
+            font-size: 23px;
+            margin: 15px 0px;
+        }
+
+        .add-to-cart {
+            padding: 10px 10px;
+            background: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background: #8c8c8c;
+        }
+
+        .artikel h1{
+            font-weight: normal; /* Шрифт не жирний */
+            font-size: 13.5px; /* Базовий розмір шрифту */
+        }
+
+        /* Responsive Styles for Mobile */
+        @media (max-width: 768px) {     
+
+/*----------------------------------------------------------------------*/
+            header {
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: row;
+                gap: 10px;
+                align-items: flex-start;
+            }
+
+            .logo img {
+                height: 40px;
+            }
+
+          
+
+           
+/*----------------------------------------------------------------------*/
+            .product-container {
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+            }
+
+            .gallery {
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .gallery img {
+                width: 80px;
+                height: 60px;
+            }
+
+            .main-image {
+                padding: 10px;
+            }
+
+            .main-image img {
+                max-height: 300px;
+            }
+
+            .details {
+                padding: 10px;
+            }
+
+            .details h1 {
+                font-size: 20px;
+            }
+
+            .sizes button {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+
+            .price_product {
+                font-size: 18px;
+            }
+
+            .add-to-cart {
+                font-size: 14px;
+                padding: 8px 10px;
+            }
+            /*---------footer------------*/
+            footer {
+        display: block; /* Робимо блоки вертикальними */
+        text-align: left; /* Вирівнюємо текст по центру */
+        padding: 30px; /* Зменшуємо внутрішні відступи */
+            }
+
+    .obslugovuvanya-klientiv, .ssocialni-mereji {
+        margin: 20px 0; /* Збільшуємо відступ між блоками зверху і знизу */
+    }
+
+    .icon_social a {
+        font-size: 30px; /* Зменшуємо розмір іконок для мобільних */
+    }
+
+    .artikel h1{
+            font-weight: normal; /* Шрифт не жирний */
+            font-size: 10px; /* Базовий розмір шрифту */
+        }
+        }
+    </style>
+</head>
+<body>
+<!-------------------------------->
+<header>
+    <div class="logo">
+        <a href="../../index.html">
+            <img src="../../img_d/Log_new.png" alt="logo">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            
+        </ul>
+    </nav>
+</header>
+<br>
+<br>
+<br>
+
+
+<!-------------------------------->
+<main>
+<div class="product-container">
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <img src="https://nb.scene7.com/is/image/NB/ms237lgg_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880" alt="Thumbnail 1" class="active" onclick="changeImage(this)">
+        <img src="https://nb.scene7.com/is/image/NB/ms237lgg_nb_04_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880" alt="Thumbnail 2" onclick="changeImage(this)">
+        <img src="https://nb.scene7.com/is/image/NB/ms237lgg_nb_05_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880" alt="Thumbnail 3" onclick="changeImage(this)">
+        <img src="https://nb.scene7.com/is/image/NB/ms237lgg_nb_03_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880" alt="Thumbnail 3" onclick="changeImage(this)">
+    </div>
+
+    <!-- Main Image Section -->
+    <div class="main-image">
+        <img src="https://nb.scene7.com/is/image/NB/ms237lgg_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880" alt="Main Image" id="mainImage">
+    </div>
+
+    <!-- Details Section -->
+    <div class="details">
+        <h1>New Balance 237 </h1>
+
+        <div class ="artikel">
+           <h1> Art: MS237LGG</h1>
+        </div>
+        
+  
+        <div class="sizes">
+             <button> 36</button>
+            <button> 37</button>
+            <button> 37.5</button>
+            <button> 38</button>
+            <button> 38.5</button>
+            <button> 39.5</button>
+            <button> 40</button>
+            <button>40.5</button>
+            <button> 41</button>
+            <button>41.5</button>
+            <button> 42</button>
+            <button> 42.5</button>
+            <button> 43</button>
+            <button> 44</button>
+            <button> 44.5</button>
+            <button> 45</button>
+            <button> 45.5</button>
+            <button> 47.5</button>
+           
+        </div>
+
+        <a href="../../rozmiry_page/rozmiry_new_balance.html" target="_blank"><i class='bx bx-table'></i>Таблиця розмірів</a>
+
+
+        <div class="price_product">
+              4 290 ₴
+        </div>
+
+        <a href="https://web.telegram.org/a/#6696686466" target="_blank">
+            <button class="add-to-cart">
+                Замовити в телеграм
+                <i class='bx bxl-telegram'></i>
+            </button>
+        </a>
+       
+
+        
+    </div>
+</div>
+</main>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+    <div class="obslugovuvanya-klientiv">
+        <p><b><strong>Обслуговування клієнтів</strong></b></p>
+       <a href="https://web.telegram.org/a/#6696686466" target="_blank"><p>Зв'яжіться з нами</p></a>
+        <p>Як замовити</p>
+    </div>
+  
+    <div class="ssocialni-mereji">
+      <p><b><strong>Соціальні мережі</strong></b></p>
+      <div class="icon_social">
+        <a href="https://t.me/edgespot_telegram" target="_blank"><i class='bx bxl-telegram'></i></a>
+        <a href="https://www.instagram.com/edgespot_ua?igsh=MTAxbnZnN2xuamV1ZA==" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.tiktok.com/@edgespot?_t=ZM-8tFa85DYK6Y&_r=1" target="_blank"><i class='bx bxl-tiktok' ></i></a>
+      </div>
+    </div>
+</footer>
+
+<script>
+    function changeImage(element) {
+        // Change the main image source to the clicked thumbnail's source
+        document.getElementById('mainImage').src = element.src;
+
+        // Highlight the active thumbnail
+        const thumbnails = document.querySelectorAll('.gallery img');
+        thumbnails.forEach(img => img.classList.remove('active'));
+        element.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
+
