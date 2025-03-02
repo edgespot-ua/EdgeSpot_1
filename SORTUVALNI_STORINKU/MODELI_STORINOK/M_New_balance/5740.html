@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img_d/icon_web.jpg" sizes="32x32" type="image/png">
+    <title>EdgeSpot - new balance - 5740</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        /* Скидання стилів для запобігання переповнення */
+        * {
+            box-sizing: border-box; /* Включає padding і border у розрахунок ширини */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Заборона горизонтального скролу */
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Хедер */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #ffffff;
+            color: #000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Гарантія, що хедер займає всю ширину екрану */
+        }
+
+        .logo img {
+            height: 50px;
+            max-width: 100%; /* Запобігання переповненню логотипу */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            font-size: 17px;
+        }
+
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #858584;
+        }
+
+        /* Головний вміст */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-tile {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-tile img {
+            max-width: 100%; /* Забезпечує адаптивність зображень */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-tile h3 {
+            font-size: 18px;
+            margin: 15px 0 10px;
+        }
+
+        .product-tile p {
+            font-size: 16px;
+            color: #000000;
+         
+        }
+
+        .product-tile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+    display: flex; /* Увімкнення режиму Flexbox */
+    justify-content: space-between; /* Розташування елементів з відступом між ними */
+    align-items: center; /* Вирівнювання по вертикалі (якщо потрібно) */
+    padding: 60px; /* Відступи всередині footer */
+    background-color: #000000; /* Колір фону для наочності */
+    color: white;
+   
+}
+
+footer p {
+    padding: 3px;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.obslugovuvanya-klientiv, .ssocialni-mereji {
+    flex: 1; /* Елементи отримують рівний простір (опціонально) */
+    margin: 0px 10px; /* Відступ між блоками */
+    
+  }
+
+  .icon_social a {
+    margin: 3px;
+    text-decoration: none;
+    font-size: 40px; /* Розмір іконки */
+    
+  }
+
+        .logo-brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* Відстань між картинками */
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto; /* Додає прокрутку, якщо контент перевищує ширину */
+            white-space: nowrap; /* Забезпечує горизонтальне розташування */
+        }
+
+        .logo-brand img {
+            height: 200px; /* Висота логотипів */
+            object-fit: contain;
+            cursor: pointer;
+            pointer-events: none;
+        }
+
+        /* Адаптивність для мобільних */
+        @media (max-width: 768px) {
+            header {
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: row;
+                gap: 10px;
+                align-items: flex-start;
+            }
+
+            .logo img {
+                height: 40px;
+            }
+
+            .product-tile h3 {
+                font-size: 16px;
+            }
+
+            .product-tile p {
+                font-size: 14px;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            footer {
+        display: block; /* Робимо блоки вертикальними */
+        text-align: left; /* Вирівнюємо текст по центру */
+        padding: 30px; /* Зменшуємо внутрішні відступи */
+            }
+
+    .obslugovuvanya-klientiv, .ssocialni-mereji {
+        margin: 20px 0; /* Збільшуємо відступ між блоками зверху і знизу */
+    }
+
+    .icon_social a {
+        font-size: 30px; /* Зменшуємо розмір іконок для мобільних */
+    }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="../../../index.html">
+            <img src="../../../img_d/Log_new.png" alt="logo">
+        </a>
+    </div>
+    <nav>
+        <ul>
+           
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="logo-brand">
+        <img src="../../../logo_brands/new_balance_loh.png" alt="Brand 3">
+    </div>
+
+    <div class="product-grid">
+        <!-- Продукти -->
+
+        <div class="product-tile">
+            <a href="../../../all_pages_new_balance/5740/5740_W5740STD.html">
+             <img src="https://nb.scene7.com/is/image/NB/w5740std_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880" alt="Shoe 2">
+             <h3>New Balance 5740</h3>
+             <p>4 850 ₴</p>
+            </a>
+         </div>
+
+         <div class="product-tile">
+            <a href="../../../all_pages_new_balance/5740/5740_M5740VPA.html">
+             <img src="https://nb.scene7.com/is/image/NB/m5740vpa_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880" alt="Shoe 2">
+             <h3>New Balance 5740</h3>
+             <p>4 850 ₴</p>
+            </a>
+         </div>
+
+         <div class="product-tile">
+            <a href="../../../all_pages_new_balance/5740/5740_M5740VPB.html">
+             <img src="https://nb.scene7.com/is/image/NB/m5740vpb_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880" alt="Shoe 2">
+             <h3>New Balance 5740</h3>
+             <p>4 850 ₴</p>
+            </a>
+         </div>
+
+         <div class="product-tile">
+            <a href="../../../all_pages_new_balance/5740/5740_M5740PCC.html">
+             <img src="https://nb.scene7.com/is/image/NB/m5740pcc_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880" alt="Shoe 2">
+             <h3>New Balance 57/40</h3>
+             <p>4 850 ₴</p>
+            </a>
+         </div>
+
+         <div class="product-tile">
+            <a href="../../../all_pages_new_balance/5740/5740_M5740FMD.html">
+             <img src="https://nb.scene7.com/is/image/NB/m5740fmd_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880" alt="Shoe 2">
+             <h3>New Balance 5740</h3>
+             <p>4 850 ₴</p>
+            </a>
+         </div>
+
+       
+      
+    </div>
+</main>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <div class="obslugovuvanya-klientiv">
+        <p><b><strong>Обслуговування клієнтів</strong></b></p>
+        <a href="https://web.telegram.org/a/#6696686466" target="_blank"><p>Зв'яжіться з нами</p></a>
+        <p>Як замовити</p>
+    </div>
+  
+    <div class="ssocialni-mereji">
+      <p><b><strong>Соціальні мережі</strong></b></p>
+      <div class="icon_social">
+        <a href="https://t.me/edgespot_telegram" target="_blank"><i class='bx bxl-telegram'></i></a>
+        <a href="https://www.instagram.com/edgespot_ua?igsh=MTAxbnZnN2xuamV1ZA==" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.tiktok.com/@edgespot?_t=ZM-8tFa85DYK6Y&_r=1" target="_blank"><i class='bx bxl-tiktok' ></i></a>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>
