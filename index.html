@@ -14,6 +14,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            
         }
 
         a {
@@ -80,7 +81,7 @@
         .product-tile {
             text-align: left;
             padding: 15px;
-            border: 1px solid #ddd;
+           
             border-radius: 15px;
             background-color: white;
             transition: transform 0.3s, box-shadow 0.3s;
@@ -189,8 +190,100 @@
 }
 
 
-        @media (max-width: 768px) {
+/*////////////////////////*/
+.adidas-sl-72 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            max-width: 1100px;
+            padding: 20px;
+            border-radius: 10px;
+          
+            margin: 50px auto; /* Центрування блоку */
+        }
 
+        .text-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .text-content h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .text-content p {
+            font-size: 17px;
+            color: #333;
+        }
+
+        .image-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0px;
+        }
+
+        .button-link {
+            font-size: 14px;
+    display: inline-block;
+    padding: 10px 20px; /* Відстань між текстом і обведенням */
+    border: 2px solid #000000; /* Колір обведення */
+    border-radius: 0px; /* Закруглені кути */
+    text-decoration: none; /* Прибрати підкреслення */
+    color: #000; /* Колір тексту */
+  }
+
+  
+
+/*////////////////////////*/
+
+
+
+
+
+        @media (max-width: 768px) {
+/*===================================*/
+.adidas-sl-72 {
+    display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+               max-width: 400px;
+                flex-direction: column;
+                text-align: center;
+                margin: 20px auto; /* Зменшений відступ для мобільних */
+            }
+
+            .text-content {
+                padding-right: 0;
+            }
+
+            .image-content img {
+                width: 80%;
+            }
+
+            .text-content h1 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .text-content p {
+            font-size: 12px;
+            color: #333;
+        }
+
+
+
+/*=====================================*/
           
           
           
@@ -286,7 +379,36 @@ content: url('https://live.staticflickr.com/65535/54380131468_03804d29c3_b.jpg')
 
         <hr class="thin-line">
 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
+        <div class="adidas-sl-72">
+            <div class="text-content">
+                NEW
+                <h1> ADIDAS SL 72 OG X LIBERTY LONDON</h1>
+                <p>Liberty London і adidas мають багато спільного. У центрі цієї колаборації – спільний дух відкриттів. Ця модель adidas SL 72 втілює суть поєднання обох брендів, поєднуючи культовий принт Liberty London з однією з найлегендарніших силуетів adidas Originals.</p>
+                <br>
+                <a href="all_pages_adidas/SL_72/SL_72_JH7226.HTML" class="button-link">СТОРІНКА ТОВАРУ</a>
+                <br>
+                <br>
+            </div>
+            
+            <div class="image-content">
+                <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/e787443572b547c9bb149a90920cdf30_9366/SL_72_OG_x_Liberty_London_Schuh_Grun_JH7226_01_00_standard.jpg" alt="Adidas SL 72 x Liberty London">
+            
+            </div>
+        </div>
+
+<br>
+<br>
+
+        <hr class="thin-line">
+
+        <br>
+        <br>
         
             <section class="product-grid">
                 <div class="product-tile">
